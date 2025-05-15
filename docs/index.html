@@ -3,82 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Innovatty</title>
+    <title>WEHEALTY</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Selamat Datang di Innovatty</h1>
+            <h1>Selamat Datang di WEHEALTY</h1>
             <nav>
                 <ul>
-                    <li><a href="#beranda">Beranda</a></li>
-                    <li><a href="#tentang">Tentang</a></li>
-                    <li><a href="#layanan">Layanan</a></li>
-                    <li><a href="#kontak">Kontak</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="container">
-        <section id="beranda" class="section">
-            <h2>Beranda</h2>
-            <p>Buat website impian Anda bersama kami! Desain modern, responsif, dan mudah digunakan untuk meningkatkan bisnis Anda secara online. Mulai sekarang, hadirkan solusi digital yang tepat dan menarik pelanggan dengan website profesional dari kami..</p>
+        <section id="home" class="section">
+            <h2>Home</h2>
+            <p>Mulailah hidup sehat hari ini! Setiap langkah kecil yang kamu ambil membawa kamu lebih dekat ke versi terbaik dari dirimu.</p>
             <div class="cta">
-                <a href="#layanan" class="btn">Lihat Layanan Kami</a>
+                <a href="#services" class="btn">See Our Services</a>
+                <button style="
+                    background-color: #3498db;
+                    color: white;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    margin-left: 10px;
+                ">
+                    <i class="fas fa-rocket"></i> Send
+                </button>
             </div>
         </section>
 
-        <section id="tentang" class="section">
-            <h2>Tentang Kami</h2>
-            <p>Kami adalah tim profesional yang terdiri dari dua ahli di bidang pengembangan dan desain website. Dengan pengalaman dan keahlian yang saling melengkapi, kami berkomitmen memberikan solusi digital berkualitas tinggi yang disesuaikan dengan kebutuhan bisnis Anda. Fokus kami adalah menghadirkan website yang tidak hanya menarik secara visual, tetapi juga fungsional dan efektif dalam mendukung pertumbuhan serta kesuksesan bisnis Anda..</p>
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hallo, saya Muhammad Faqih Al Rifai, ahli kesehatan yang siap membantu Anda mencapai tujuan kesehatan Anda. Dengan pendekatan yang sederhana dan terbukti, saya akan membimbing Anda menuju gaya hidup yang lebih sehat dan bugar. Bersama kita bisa wujudkan kesehatan yang Anda impikan!.</p>
             <div class="team">
                 <div class="member">
                     <i class="fas fa-user"></i>
                     <h3>Muhammad Faqih Al Rifai</h3>
-                    <p>Web Designer</p>
+                    <p>Healthcare Specialist</p>
                 </div>
-                <div class="member">
-                    <i class="fas fa-user"></i>
-                    <h3>Ibrahim Bahaly</h3>
-                    <p>Web Developer</p>
-                </div>
-            </div>
+             </div>
         </section>
 
-        <section id="layanan" class="section">
-            <h2>Layanan Kami</h2>
+        <section id="services" class="section">
+            <h2>Our Services</h2>
             <div class="services">
                 <div class="service">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Pembuatan Website</h3>
-                    <p>Desain website unik sesuai kebutuhan bisnis Anda.</p>
+                    <i class="fas fa-strawberry"></i>
+                    <h3>Foods</h3>
+                    <p>explain the nutrients in foods.</p>
                 </div>
                 <div class="service">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Desain Responsif</h3>
-                    <p>Website yang tampil sempurna di semua perangkat, dari desktop hingga mobile.</p>
+                    <i class="fas fa-running"></i>
+                    <h3>Sports</h3>
+                    <p>strength, endurance, and agility of the body.</p>
                 </div>
                 <div class="service">
-                    <i class="fas fa-search"></i>
-                    <h3>SEO Optimization</h3>
-                    <p>Optimasi website untuk peringkat lebih tinggi di mesin pencari.</p>
+                    <i class="fas fa-spa"></i>
+                    <h3>Skincare</h3>
+                    <p>a complete solution for your daily skincare.</p>
                 </div>
             </div>
         </section>
 
-        <section id="kontak" class="section">
-            <h2>Hubungi Kami</h2>
+        <section id="contact" class="section">
+            <h2>contact us</h2>
             <form class="contact-form">
                 <div class="form-group">
-                    <label for="nama">Nama:</label>
-                    <input type="text" id="nama" name="nama" required>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 WEHEALTY. kebijakan privasi.</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
