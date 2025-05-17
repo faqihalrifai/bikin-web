@@ -70,12 +70,6 @@ header {
     animation: fadeIn 1s ease-in;
 }
 
-/* Hilangkan garis dekoratif di header */
-header {
-  border-top: none !important;
-  border-right: none !important;
-}
-
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -872,11 +866,6 @@ footer {
 
 .action-button:hover {
     background-color: var(--primary-dark);
-}
-
-/* Sembunyikan menu toggle */
-.menu-toggle, .hamburger-menu, .navbar-toggler {
-  display: none !important;
 }
 
 #sleep-summary {
