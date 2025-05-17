@@ -9,15 +9,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Mobile menu toggle
-    document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.mobile-menu');
-    const navMenu = document.querySelector('nav');
-    
-    if (menuToggle && navMenu) {
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-    }
+   document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  
+  menuToggle.addEventListener('click', function() {
+    mobileMenu.classList.toggle('active');
+  });
 });
 
     // Scroll to section smoothly
